@@ -15,7 +15,6 @@ export default class UsersController {
       password,
     });
 
-    // Deleting user password to do not show into response
     delete user.password;
 
     return response.json(user);
